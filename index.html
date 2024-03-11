@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..600&display=swap&-v=20240311195803" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?-v=20240311195803">
+   <title>Главная</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+  <img src="./img/icons/logo.svg" alt="logo" class="header__logo logo">
+  <nav class="header__menu menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="#services" class="menu__link">Услуги</a>
+      </li>
+      <li class="menu__item">
+        <a href="#about" class="menu__link">О нас</a>
+      </li>
+      <li class="menu__item">
+        <a href="#partners" class="menu__link">Партнеры</a>
+      </li>
+      <li class="menu__item">
+        <a href="#teams" class="menu__link">Команда</a>
+      </li>
+      <li class="menu__item">
+        <a href="#contacts" class="menu__link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="burger"><span></span></div>
+  <a href="#popup" class="header__button popup__link">Связаться с нами</a>
+  <ul class="header__contacts contacts">
+    <li class="contacts__address contacts__item">Московская область, город Красногорск, деревня Глухово, ул. Романовская, д13, кВ 474</li>
+    <li class="contacts__phone contacts__item">+7 (925) 519-88-23</li>
+    <li class="contacts__email contacts__item">info@trust-fins.ru</li>
+  </ul>
+</header>
+      <main class="page">
+         <section class="hero">
+            <div class="hero__container">
+               <div class="swiper hero__slider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide hero__slide">
+                        <div class="hero__content">
+                           <h2 class="hero__title title__h2 title__h2-bold">Уникальность</h2>
+                           <div class="hero__text">Персональный подход и оптимальные решения для финансовых задач бизнеса в режиме <span class="hero__text-bold">«одного окна»</span></div>
+                           <a href="#" class="hero__button orange-button popup__link">Оставить заявку</a>
+                        </div>
+                        <div class="hero__image">
+                           <picture><source srcset="./img/hero_bg.webp" type="image/webp"><img src="./img/hero_bg.png" alt="фон блока hero" class="hero__image-bg" aria-hidden="true"></picture>
+                           <picture><source srcset="./img/bank.webp" type="image/webp"><img src="./img/bank.png" alt="Банк" class="hero__image-img"></picture>
+                        </div>
+                     </div>
+                     <div class="swiper-slide hero__slide">
+                        <div class="hero__content">
+                           <h2 class="hero__title title__h2 title__h2-bold">Специализация</h2>
+                           <div class="hero__text">Реализация банковских, страховых и прочих финансовых продуктов</div>
+                           <a href="#" class="hero__button orange-button popup__link">Оставить заявку</a>
+                        </div>
+                        <div class="hero__image">
+                           <picture><source srcset="./img/hero_bg2.webp" type="image/webp"><img src="./img/hero_bg2.png" alt="фон блока hero" class="hero__image-bg" aria-hidden="true"></picture>
+                           <picture><source srcset="./img/wallet.webp" type="image/webp"><img src="./img/wallet.png" alt="Банк" class="hero__image-img"></picture>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="hero__swiper-pagination"></div>
+               </div>
+            </div>
+            <div class="hero__container">
+               <ul class="advantages">
+                  <li class="advantages__item">
+                     <img src="./img/icons/arhive_alt_small_secure_light.svg" alt="icon" class="advantages__icon" aria-hidden="true">
+                     <div class="advantages__text">Подберем лучшее предложение и оформим финансовый и страховой продукт для вашего бизнеса</div>
+                  </li>
+                  <li class="advantages__item">
+                     <img src="./img/icons/wallet_alt_light.svg" alt="icon" class="advantages__icon" aria-hidden="true">
+                     <div class="advantages__text">Сэкономим ваши<br> расходы</div>
+                  </li>
+                  <li class="advantages__item">
+                     <img src="./img/icons/chart_pin_light.svg" alt="icon" class="advantages__icon" aria-hidden="true">
+                     <div class="advantages__text">Работаем на результат<br> без предоплаты</div>
+                  </li>
+                  <li class="advantages__item">
+                     <img src="./img/icons/key_alt_light.svg" alt="icon" class="advantages__icon" aria-hidden="true">
+                     <div class="advantages__text">Урегулируем страховые случаи «под ключ»</div>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="services" id="services">
+            <h2 class="services__title title__h2">Наши <span class="title__h2-bold">услуги</span></h2>
+            <div class="services__tabs tabs" data-tabs="services">
+               <ul class="services__tabs-list tabs__nav">
+                  <li class="services__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Страхование</button></li>
+                  <li class="services__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Финансирование</button></li>
+               </ul>
+               <div class="services__tabs-content tabs__content">
+                  <div class="services__tabs-panel tabs__panel">
+                     <div class="services__slider swiper">
+                        <div class="swiper-wrapper">
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование ТРЦ</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование СМР</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/3.webp" type="image/webp"><img src="./img/services/3.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование имущества</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/4.webp" type="image/webp"><img src="./img/services/4.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование персонала</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование ТРЦ</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование СМР</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="services__tabs-panel tabs__panel">
+                     <div class="services__slider swiper">
+                        <div class="swiper-wrapper">
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование ТРЦ</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование СМР</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/3.webp" type="image/webp"><img src="./img/services/3.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование имущества</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/4.webp" type="image/webp"><img src="./img/services/4.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование персонала</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование ТРЦ</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="services__slide swiper-slide">
+                              <div class="service">
+                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                 <div class="service__content">
+                                    <h3 class="service__title">Страхование СМР</h3>
+                                    <button type="button" class="service__button">Подробнее</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="about" id="about">
+            <div class="about__container">
+               <div class="about__content">
+                  <h2 class="about__title title__h2">О <span class="title__h2-bold">нас</span></h2>
+                  <div class="about__text">Финансовой агентство TRUST – это команда опытных специалистов страховой и
+                     банковской сферы, которые находят лучшее решение для клиента, даже в сложных
+                     ситуациях.
+                  </div>
+                  <h3 class="about__title-h3">Наши клиенты представляют средний и крупный бизнес РФ</h3>
+                  <ul class="about__list">
+                     <li class="about__item">Присутствуют на рынке от 4 месяцев</li>
+                     <li class="about__item">Стремятся к сотрудничеству с сильными и проверенными пратнерами</li>
+                     <li class="about__item">Оборот компаний от 30 млн. руб. в год</li>
+                     <li class="about__item">Экономят свое время и средства</li>
+                  </ul>
+               </div>
+               <div class="about__standard standard">
+                  <h3 class="standard__title">Стандарт качества</h3>
+                  <div class="standard__content">
+                     <ul class="standard__list">
+                        <li class="standard__item">
+                           <div class="standard__text">Только проверенные страховые компании, банки и лизинговые компании (TOP-10 рейтинг надежности)</div>
+                           <picture><source srcset="./img/standard/1.webp" type="image/webp"><img src="./img/standard/1.png" alt="img" class="standard__image"></picture>
+                        </li>
+                        <li class="standard__item">
+                           <div class="standard__text">Быстрый поиск лучшего предложения</div>
+                           <picture><source srcset="./img/standard/2.webp" type="image/webp"><img src="./img/standard/2.png" alt="img" class="standard__image"></picture>
+                        </li>
+                        <li class="standard__item">
+                           <div class="standard__text">Быстрый поиск лучшего предложения</div>
+                           <picture><source srcset="./img/standard/3.webp" type="image/webp"><img src="./img/standard/3.png" alt="img" class="standard__image"></picture>
+                        </li>
+                        <li class="standard__item">
+                           <div class="standard__text">Управление страховым портфелем</div>
+                           <picture><source srcset="./img/standard/4.webp" type="image/webp"><img src="./img/standard/4.png" alt="img" class="standard__image"></picture>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="escort" id="escort">
+            <div class="escort__container">
+               <h2 class="escort__title title__h2 title__h2-bold">Сопровождение</h2>
+               <div class="escort__subtitle">Сопровождаем клиента на всех этапах оформления кредитной сделки</div>
+               <ul class="escort__list">
+                  <li class="escort__item">
+                     <div class="escort__num">01</div>
+                     <div class="escort__text">Консультация по выбору банковского или страхового продукта</div>
+                  </li>
+                  <li class="escort__item">
+                     <div class="escort__num">02</div>
+                     <div class="escort__text">Сопровождение в подготовке документов</div>
+                  </li>
+                  <li class="escort__item">
+                     <div class="escort__num">03</div>
+                     <div class="escort__text">Подбор оптимального продукта на льготных условиях</div>
+                  </li>
+                  <li class="escort__item">
+                     <div class="escort__num">04</div>
+                     <div class="escort__text">Обеспечение быстрого принятия решения</div>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="submit" id="submit">
+            <div class="submit__container">
+               <h2 class="submit__title title__h2 title__h2-bold">Оставить заявку</h2>
+               <ul class="submit__list">
+                  <li class="submit__item submit-point">
+                     <h3 class="submit-point__title">Заполните заявку</h3>
+                     <ul class="submit-point__list">
+                        <li class="submit-point__item">Подача заявки через сайт, запрос по e-mail, через messedger или обращение по телефону</li>
+                        <li class="submit-point__item">Консультация по выбору продукта с экспертом TRUST</li>
+                     </ul>
+                  </li>
+                  <li class="submit__item submit-point">
+                     <h3 class="submit-point__title">Дождитесь одобрения</h3>
+                     <ul class="submit-point__list">
+                        <li class="submit-point__item">Помощь специалистов компании в подготовке пакета документов в финансовую организацию</li>
+                        <li class="submit-point__item">Получение предварительного решения за 1 день</li>
+                     </ul>
+                  </li>
+                  <li class="submit__item submit-point">
+                     <h3 class="submit-point__title">Получите кредит</h3>
+                     <ul class="submit-point__list">
+                        <li class="submit-point__item">Личная встреча и подписание договора на оказание услуг TRAST</li>
+                        <li class="submit-point__item">Кредитный комитет в банке и одобрение на ранее согласованных условиях</li>
+                     </ul>
+                  </li>
+               </ul>
+               <form action="" class="submit__form form">
+                  <fieldset class="form__fieldset">
+                     <input type="text" name="name" class="form__input" id="name" placeholder="Имя" required>
+                     <input type="tel" name="tel" class="form__input" id="tel" minlength="30" placeholder="+7 (999) 999-99-99" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                     <input type="text" name="inn" class="form__input" id="inn" minlength="10" placeholder="ИНН" required>
+                     <select name="select" class="form__select">
+                        <option class="form__option" value="Страхование">Страхование</option>
+                        <option class="form__option" value="2">Кредит для бизнеса</option>
+                        <option class="form__option" value="3">Факторинг</option>
+                        <option class="form__option" value="3">Кредит под залог</option>
+                        <option class="form__option" value="3">Банковская гарантия</option>
+                        <option class="form__option" value="3">Иное ИНН</option>
+                     </select>
+                  </fieldset>
+                  <fieldset class="form__fieldset">
+                     <div class="form__text">
+                        Нажимая кнопку «Отправить», вы даёте согласие на <a href="#" class="form__link">обработку персональных данных</a> и соглашаетесь с <a href="#" class="form__link">политикой конфиденциальности</a>
+                     </div>
+                     <button type="submit" class="form__button orange-button">Отправить</button>
+                  </fieldset>
+               </form>
+            </div>
+         </section>
+         <section class="partners">
+            <h2 class="partners__title title__h2" id="partners">Наши <span class="title__h2-bold">партнеры</span></h2>
+            <div class="partners__tabs tabs" data-tabs="partners">
+               <ul class="partners__tabs-list tabs__nav">
+                  <li class="partners__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Страховые компании</button></li>
+                  <li class="partners__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Банки</button></li>
+                  <li class="partners__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Лизинговые компании</button></li>
+               </ul>
+               <div class="partners__tabs-content tabs__content">
+                  <div class="partners__tabs-panel tabs__panel">
+                     <div class="partners__slider swiper">
+                        <div class="swiper-wrapper partners__wrapper">
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/1.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/2.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/3.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/4.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/5.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/6.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/7.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/8.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/9.svg" alt="" class="partner-img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="partners__tabs-panel tabs__panel">
+                     <div class="partners__slider swiper">
+                        <div class="swiper-wrapper partners__wrapper">
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/1.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/2.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/3.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/4.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/5.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/6.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/7.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/8.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/9.svg" alt="" class="partner-img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="partners__tabs-panel tabs__panel">
+                     <div class="partners__slider swiper">
+                        <div class="swiper-wrapper partners__wrapper">
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/1.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/2.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/3.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/4.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/5.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/6.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/7.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/8.svg" alt="" class="partner-img">
+                           </div>
+                           <div class="partners__slide swiper-slide">
+                              <img src="./img/partners/9.svg" alt="" class="partner-img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="teams" id="teams">
+            <div class="teams__container">
+               <h2 class="teams__title title__h2">Наша <span class="title__h2-bold">команда</span></h2>
+               <ul class="teams__list">
+                  <li class="teams__item team">
+                     <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
+                     <div class="team__content">
+                        <div class="team__name">Виктория Тибекина</div>
+                        <div class="team__job">Заместитель Генерального директора</div>
+                     </div>
+                     <ul class="team__info-list">
+                        <li class="team__info-item">
+                           <div class="team__info-title">Опыт:</div>
+                           <div class="team__info-value">10 лет опыта работы в страховании
+                              САО ВСК, ООО СК ВТБ Страхование</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Образование:</div>
+                           <div class="team__info-value">МИСиС, Финансы и кредит</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Телефон:</div>
+                           <div class="team__info-value">+7 925 519 88 23</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">E-mail:</div>
+                           <div class="team__info-value">kbekina.trust@mail.ru</div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="teams__item team">
+                     <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
+                     <div class="team__content">
+                        <div class="team__name">Виктория Тибекина</div>
+                        <div class="team__job">Заместитель Генерального директора</div>
+                     </div>
+                     <ul class="team__info-list">
+                        <li class="team__info-item">
+                           <div class="team__info-title">Опыт:</div>
+                           <div class="team__info-value">10 лет опыта работы в страховании
+                              САО ВСК, ООО СК ВТБ Страхование</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Образование:</div>
+                           <div class="team__info-value">МИСиС, Финансы и кредит</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Телефон:</div>
+                           <div class="team__info-value">+7 925 519 88 23</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">E-mail:</div>
+                           <div class="team__info-value">kbekina.trust@mail.ru</div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="teams__item team">
+                     <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
+                     <div class="team__content">
+                        <div class="team__name">Виктория Тибекина</div>
+                        <div class="team__job">Заместитель Генерального директора</div>
+                     </div>
+                     <ul class="team__info-list">
+                        <li class="team__info-item">
+                           <div class="team__info-title">Опыт:</div>
+                           <div class="team__info-value">10 лет опыта работы в страховании
+                              САО ВСК, ООО СК ВТБ Страхование</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Образование:</div>
+                           <div class="team__info-value">МИСиС, Финансы и кредит</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Телефон:</div>
+                           <div class="team__info-value">+7 925 519 88 23</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">E-mail:</div>
+                           <div class="team__info-value">kbekina.trust@mail.ru</div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="teams__item team">
+                     <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
+                     <div class="team__content">
+                        <div class="team__name">Виктория Тибекина</div>
+                        <div class="team__job">Заместитель Генерального директора</div>
+                     </div>
+                     <ul class="team__info-list">
+                        <li class="team__info-item">
+                           <div class="team__info-title">Опыт:</div>
+                           <div class="team__info-value">10 лет опыта работы в страховании
+                              САО ВСК, ООО СК ВТБ Страхование</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Образование:</div>
+                           <div class="team__info-value">МИСиС, Финансы и кредит</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">Телефон:</div>
+                           <div class="team__info-value">+7 925 519 88 23</div>
+                        </li>
+                        <li class="team__info-item">
+                           <div class="team__info-title">E-mail:</div>
+                           <div class="team__info-value">kbekina.trust@mail.ru</div>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="contacts" id="contacts">
+            <div class="contacts__container">
+               <div class="contacts__content">
+                  <h2 class="contacts__title title__h2">Наши <span class="title__h2-bold">контакты</span></h2>
+                  <ul class="contacts__contacts contacts">
+                     <li class="contacts__address contacts__item">Московская область, город Красногорск, деревня Глухово, ул. Романовская, д13, кВ 474</li>
+                     <li class="contacts__phone contacts__item">+7 (925) 519-88-23</li>
+                     <li class="contacts__email contacts__item">info@trust-fins.ru</li>
+                  </ul>
+               </div>
+               <div class="contacts__content">
+                  <h3 class="contacts__title-h3">Оставить заявку</h3>
+                  <form action="" class="contacts__form form">
+                     <fieldset class="form__fieldset">
+                        <input type="text" name="name" class="form__input" id="name" placeholder="Имя" required>
+                        <input type="tel" name="tel" class="form__input" id="tel" minlength="30" placeholder="+7 (999) 999-99-99" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                        <input type="text" name="inn" class="form__input" id="inn" minlength="10" placeholder="ИНН" required>
+                        <select name="select" class="form__select">
+                           <option class="form__option" value="Страхование">Страхование</option>
+                           <option class="form__option" value="2">Кредит для бизнеса</option>
+                           <option class="form__option" value="3">Факторинг</option>
+                           <option class="form__option" value="3">Кредит под залог</option>
+                           <option class="form__option" value="3">Банковская гарантия</option>
+                           <option class="form__option" value="3">Иное ИНН</option>
+                        </select>
+                     </fieldset>
+                     <fieldset class="form__fieldset form__fieldset-row">
+                        <div class="form__text">
+                           Нажимая кнопку «Отправить», вы даёте согласие на <a href="#" class="form__link">обработку персональных данных</a> и соглашаетесь с <a href="#" class="form__link">политикой конфиденциальности</a>
+                        </div>
+                        <button type="submit" class="form__button orange-button">Отправить</button>
+                     </fieldset>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+  <div class="footer__container">
+    <img src="./img/icons/footer_logo.svg" alt="logo" class="footer__logo logo">
+    <nav class="footer__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#services" class="menu__link">Услуги</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#partners" class="menu__link">Партнеры</a>
+        </li>
+        <li class="menu__item">
+          <a href="#teams" class="menu__link">Команда</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contacts" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="footer__social"><img src="./img/icons/WhatsApp.svg" alt="WhatsApp"></a>
+    <div class="footer__copyright">© «Trust» финансовое агентство, 2024</div>
+  </div>
+</footer>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js?-v=20240311195803"></script>
+<script src="js/app.min.js?-v=20240311195803"></script>
+</body>
+
+</html>

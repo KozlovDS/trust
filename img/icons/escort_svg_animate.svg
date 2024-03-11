@@ -1,0 +1,49 @@
+<svg width="650" height="768" viewBox="0 0 650 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Property 1=Default">
+<g id="Ellipse 241" style="mix-blend-mode:plus-lighter" filter="url(#filter0_f_69_2291)">
+<ellipse cx="321" cy="350" rx="124" ry="124" fill="#AD872D">
+                                    <animate attributeName="cx" values="321;386;366;321" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/>
+                                    <animate attributeName="cy" values="350;326;442;350" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/></ellipse>
+</g>
+<g id="Ellipse 242" filter="url(#filter1_f_69_2291)">
+<ellipse cx="231.5" cy="508.5" rx="79.5" ry="79.5" fill="#E0BC73">
+                                    <animate attributeName="cx" values="231.5;218.5;429.5;231.5" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/>
+                                    <animate attributeName="cy" values="508.5;325.5;281.5;508.5" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/></ellipse>
+</g>
+<g id="Ellipse 34" filter="url(#filter2_f_69_2291)">
+<ellipse cx="429.5" cy="247.5" rx="68.5" ry="68.5" fill="#FFC52F">
+                                    <animate attributeName="cx" values="429.5;385.5;209.5;429.5" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/>
+                                    <animate attributeName="cy" values="247.5;497.5;373.5;247.5" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/></ellipse>
+</g>
+
+                                    </g>
+<defs>
+<filter id="filter0_f_69_2291" x="-19.5" y="9.5" width="681" height="681" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="108.25" result="effect1_foregroundBlur_69_2291">
+                                    </feGaussianBlur>
+
+                                    
+                                    <animate attributeName="x" values="-19.5;45.5;25.5;-19.5" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/>
+                                    <animate attributeName="y" values="9.5;-14.5;101.5;9.5" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/></filter>
+<filter id="filter1_f_69_2291" x="52" y="329" width="359" height="359" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_69_2291">
+                                    </feGaussianBlur>
+
+                                    
+                                    <animate attributeName="x" values="52;39;250;52" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/>
+                                    <animate attributeName="y" values="329;146;102;329" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/></filter>
+<filter id="filter2_f_69_2291" x="261" y="79" width="337" height="337" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_69_2291">
+                                    </feGaussianBlur>
+
+                                    
+                                    <animate attributeName="x" values="261;217;41;261" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/>
+                                    <animate attributeName="y" values="79;329;205;79" begin="0s" dur="3s" repeatCount="indefinite" fill="freeze" calcMode="linear" keyTimes="0;0.333;0.667;1"/></filter>
+</defs>
+</svg>
