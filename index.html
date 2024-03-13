@@ -6,8 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..600&display=swap&-v=20240311195803" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.min.css?-v=20240311195803">
+   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..600&display=swap&-v=20240313181533" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?-v=20240313181533">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?-v=20240313181533" />
    <title>Главная</title>
 </head>
 
@@ -35,7 +36,7 @@
     </ul>
   </nav>
   <div class="burger"><span></span></div>
-  <a href="#popup" class="header__button popup__link">Связаться с нами</a>
+  <a href="#popup_form-success" class="header__button popup-link">Связаться с нами</a>
   <ul class="header__contacts contacts">
     <li class="contacts__address contacts__item">Московская область, город Красногорск, деревня Глухово, ул. Романовская, д13, кВ 474</li>
     <li class="contacts__phone contacts__item">+7 (925) 519-88-23</li>
@@ -51,18 +52,18 @@
                         <div class="hero__content">
                            <h2 class="hero__title title__h2 title__h2-bold">Уникальность</h2>
                            <div class="hero__text">Персональный подход и оптимальные решения для финансовых задач бизнеса в режиме <span class="hero__text-bold">«одного окна»</span></div>
-                           <a href="#" class="hero__button orange-button popup__link">Оставить заявку</a>
+                           <a href="#popup_form" class="hero__button orange-button popup-link">Оставить заявку</a>
                         </div>
                         <div class="hero__image">
                            <picture><source srcset="./img/hero_bg.webp" type="image/webp"><img src="./img/hero_bg.png" alt="фон блока hero" class="hero__image-bg" aria-hidden="true"></picture>
-                           <picture><source srcset="./img/bank.webp" type="image/webp"><img src="./img/bank.png" alt="Банк" class="hero__image-img"></picture>
+                           <picture><source srcset="./img/bank.webp" type="image/webp"><img src="./img/bank.png" alt="Банк" data-aos="fade-up-left" class="hero__image-img"></picture>
                         </div>
                      </div>
                      <div class="swiper-slide hero__slide">
                         <div class="hero__content">
                            <h2 class="hero__title title__h2 title__h2-bold">Специализация</h2>
                            <div class="hero__text">Реализация банковских, страховых и прочих финансовых продуктов</div>
-                           <a href="#" class="hero__button orange-button popup__link">Оставить заявку</a>
+                           <a href="#popup_form" class="hero__button orange-button popup-link">Оставить заявку</a>
                         </div>
                         <div class="hero__image">
                            <picture><source srcset="./img/hero_bg2.webp" type="image/webp"><img src="./img/hero_bg2.png" alt="фон блока hero" class="hero__image-bg" aria-hidden="true"></picture>
@@ -74,7 +75,7 @@
                </div>
             </div>
             <div class="hero__container">
-               <ul class="advantages">
+               <ul class="advantages" data-aos="fade-up">
                   <li class="advantages__item">
                      <img src="./img/icons/arhive_alt_small_secure_light.svg" alt="icon" class="advantages__icon" aria-hidden="true">
                      <div class="advantages__text">Подберем лучшее предложение и оформим финансовый и страховой продукт для вашего бизнеса</div>
@@ -110,7 +111,13 @@
                                  <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
                                  <div class="service__content">
                                     <h3 class="service__title">Страхование ТРЦ</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                                    <a href="#popup-services" class="popup-link service__button">Подробнее</a>
+                                 </div>
+                                 <div class="service__list">
+                                    <li class="popup-services__item">Страхование имущества торгового центра</li>
+                                    <li class="popup-services__item">Страхование ответственности арендаторов</li>
+                                    <li class="popup-services__item">Страхование гражданской ответственности торгового центра</li>
+                                    <li class="popup-services__item">Страхование имущества арендаторов</li>
                                  </div>
                               </div>
                            </div>
@@ -119,7 +126,15 @@
                                  <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
                                  <div class="service__content">
                                     <h3 class="service__title">Страхование СМР</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                                    <a href="#popup-services" class="popup-link service__button">Подробнее</a>
+                                 </div>
+                                 <div class="service__list">
+                                    <li class="popup-services__item">Страхование строительно-монтажных работ</li>
+                                    <li class="popup-services__item">Страхование гражданской ответственности при проведении строительных работ</li>
+                                    <li class="popup-services__item">Страхование ответственности застройщика</li>
+                                    <li class="popup-services__item">Страхование субподрядных организаций</li>
+                                    <li class="popup-services__item">Страхование существующего имущества</li>
+                                    <li class="popup-services__item">Страхование послепускового периода</li>
                                  </div>
                               </div>
                            </div>
@@ -228,18 +243,21 @@
          <section class="about" id="about">
             <div class="about__container">
                <div class="about__content">
-                  <h2 class="about__title title__h2">О <span class="title__h2-bold">нас</span></h2>
-                  <div class="about__text">Финансовой агентство TRUST – это команда опытных специалистов страховой и
-                     банковской сферы, которые находят лучшее решение для клиента, даже в сложных
-                     ситуациях.
+                  <h2 class="about__title title__h2" data-aos="fade-down" data-aos-duration="600">О <span class="title__h2-bold">нас</span></h2>
+                  <div data-aos="fade-right" data-aos-duration="1000">
+                     <div class="about__text">Финансовой агентство TRUST – это команда опытных специалистов страховой и
+                        банковской сферы, которые находят лучшее решение для клиента, даже в сложных
+                        ситуациях.
+                     </div>
+                     <h3 class="about__title-h3">Наши клиенты представляют средний и крупный бизнес РФ</h3>
+                     <ul class="about__list">
+                        <li class="about__item">Присутствуют на рынке от 4 месяцев</li>
+                        <li class="about__item">Стремятся к сотрудничеству с сильными и проверенными пратнерами</li>
+                        <li class="about__item">Оборот компаний от 30 млн. руб. в год</li>
+                        <li class="about__item">Экономят свое время и средства</li>
+                     </ul>
                   </div>
-                  <h3 class="about__title-h3">Наши клиенты представляют средний и крупный бизнес РФ</h3>
-                  <ul class="about__list">
-                     <li class="about__item">Присутствуют на рынке от 4 месяцев</li>
-                     <li class="about__item">Стремятся к сотрудничеству с сильными и проверенными пратнерами</li>
-                     <li class="about__item">Оборот компаний от 30 млн. руб. в год</li>
-                     <li class="about__item">Экономят свое время и средства</li>
-                  </ul>
+
                </div>
                <div class="about__standard standard">
                   <h3 class="standard__title">Стандарт качества</h3>
@@ -268,22 +286,24 @@
          </section>
          <section class="escort" id="escort">
             <div class="escort__container">
-               <h2 class="escort__title title__h2 title__h2-bold">Сопровождение</h2>
-               <div class="escort__subtitle">Сопровождаем клиента на всех этапах оформления кредитной сделки</div>
+               <div data-aos="fade-down" style="text-align: center;">
+                  <h2 class="escort__title title__h2 title__h2-bold">Сопровождение</h2>
+                  <div class="escort__subtitle">Сопровождаем клиента на всех этапах оформления кредитной сделки</div>
+               </div>
                <ul class="escort__list">
-                  <li class="escort__item">
+                  <li class="escort__item" data-aos="fade-right">
                      <div class="escort__num">01</div>
                      <div class="escort__text">Консультация по выбору банковского или страхового продукта</div>
                   </li>
-                  <li class="escort__item">
+                  <li class="escort__item" data-aos="fade-left">
                      <div class="escort__num">02</div>
                      <div class="escort__text">Сопровождение в подготовке документов</div>
                   </li>
-                  <li class="escort__item">
+                  <li class="escort__item" data-aos="fade-right">
                      <div class="escort__num">03</div>
                      <div class="escort__text">Подбор оптимального продукта на льготных условиях</div>
                   </li>
-                  <li class="escort__item">
+                  <li class="escort__item" data-aos="fade-left">
                      <div class="escort__num">04</div>
                      <div class="escort__text">Обеспечение быстрого принятия решения</div>
                   </li>
@@ -294,21 +314,21 @@
             <div class="submit__container">
                <h2 class="submit__title title__h2 title__h2-bold">Оставить заявку</h2>
                <ul class="submit__list">
-                  <li class="submit__item submit-point">
+                  <li class="submit__item submit-point" data-aos="fade-left">
                      <h3 class="submit-point__title">Заполните заявку</h3>
                      <ul class="submit-point__list">
                         <li class="submit-point__item">Подача заявки через сайт, запрос по e-mail, через messedger или обращение по телефону</li>
                         <li class="submit-point__item">Консультация по выбору продукта с экспертом TRUST</li>
                      </ul>
                   </li>
-                  <li class="submit__item submit-point">
+                  <li class="submit__item submit-point" data-aos="fade-left" data-aos-delay="300">
                      <h3 class="submit-point__title">Дождитесь одобрения</h3>
                      <ul class="submit-point__list">
                         <li class="submit-point__item">Помощь специалистов компании в подготовке пакета документов в финансовую организацию</li>
                         <li class="submit-point__item">Получение предварительного решения за 1 день</li>
                      </ul>
                   </li>
-                  <li class="submit__item submit-point">
+                  <li class="submit__item submit-point" data-aos="fade-left" data-aos-delay="600">
                      <h3 class="submit-point__title">Получите кредит</h3>
                      <ul class="submit-point__list">
                         <li class="submit-point__item">Личная встреча и подписание договора на оказание услуг TRAST</li>
@@ -316,7 +336,7 @@
                      </ul>
                   </li>
                </ul>
-               <form action="" class="submit__form form">
+               <form action="" class="submit__form form" data-aos="fade-down">
                   <fieldset class="form__fieldset">
                      <input type="text" name="name" class="form__input" id="name" placeholder="Имя" required>
                      <input type="tel" name="tel" class="form__input" id="tel" minlength="30" placeholder="+7 (999) 999-99-99" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
@@ -454,7 +474,7 @@
             <div class="teams__container">
                <h2 class="teams__title title__h2">Наша <span class="title__h2-bold">команда</span></h2>
                <ul class="teams__list">
-                  <li class="teams__item team">
+                  <li class="teams__item team" data-aos="fade-right">
                      <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
                      <div class="team__content">
                         <div class="team__name">Виктория Тибекина</div>
@@ -480,7 +500,7 @@
                         </li>
                      </ul>
                   </li>
-                  <li class="teams__item team">
+                  <li class="teams__item team" data-aos="fade-left">
                      <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
                      <div class="team__content">
                         <div class="team__name">Виктория Тибекина</div>
@@ -506,7 +526,7 @@
                         </li>
                      </ul>
                   </li>
-                  <li class="teams__item team">
+                  <li class="teams__item team" data-aos="fade-right">
                      <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
                      <div class="team__content">
                         <div class="team__name">Виктория Тибекина</div>
@@ -532,7 +552,7 @@
                         </li>
                      </ul>
                   </li>
-                  <li class="teams__item team">
+                  <li class="teams__item team" data-aos="fade-left">
                      <picture><source srcset="./img/team.webp" type="image/webp"><img src="./img/team.png" alt="team" class="team__image"></picture>
                      <div class="team__content">
                         <div class="team__name">Виктория Тибекина</div>
@@ -563,7 +583,7 @@
          </section>
          <section class="contacts" id="contacts">
             <div class="contacts__container">
-               <div class="contacts__content">
+               <div class="contacts__content" data-aos="fade-right">
                   <h2 class="contacts__title title__h2">Наши <span class="title__h2-bold">контакты</span></h2>
                   <ul class="contacts__contacts contacts">
                      <li class="contacts__address contacts__item">Московская область, город Красногорск, деревня Глухово, ул. Романовская, д13, кВ 474</li>
@@ -571,7 +591,7 @@
                      <li class="contacts__email contacts__item">info@trust-fins.ru</li>
                   </ul>
                </div>
-               <div class="contacts__content">
+               <div class="contacts__content" data-aos="fade-left">
                   <h3 class="contacts__title-h3">Оставить заявку</h3>
                   <form action="" class="contacts__form form">
                      <fieldset class="form__fieldset">
@@ -625,8 +645,67 @@
   </div>
 </footer>
    </div>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js?-v=20240311195803"></script>
-<script src="js/app.min.js?-v=20240311195803"></script>
+   <div id="popup_form" class="popup popup_form">
+      <div class="popup__body">
+         <div class="popup__content popup_form__content">
+            <a href="#" class="popup__close close-popup"></a>
+            <h3 class="contacts__title-h3">Оставить заявку</h3>
+            <form action="" class="contacts__form form">
+               <fieldset class="form__fieldset">
+                  <input type="text" name="name" class="form__input" id="name" placeholder="Имя" required>
+                  <input type="tel" name="tel" class="form__input" id="tel" minlength="30" placeholder="+7 (999) 999-99-99" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                  <input type="text" name="inn" class="form__input" id="inn" minlength="10" placeholder="ИНН" required>
+                  <select name="select" class="form__select">
+                     <option class="form__option" value="Страхование">Страхование</option>
+                     <option class="form__option" value="2">Кредит для бизнеса</option>
+                     <option class="form__option" value="3">Факторинг</option>
+                     <option class="form__option" value="3">Кредит под залог</option>
+                     <option class="form__option" value="3">Банковская гарантия</option>
+                     <option class="form__option" value="3">Иное ИНН</option>
+                  </select>
+               </fieldset>
+               <fieldset class="form__fieldset form__fieldset-row">
+                  <div class="form__text">
+                     Нажимая кнопку «Отправить», вы даёте согласие на <a href="#" class="form__link">обработку персональных данных</a> и соглашаетесь с <a href="#" class="form__link">политикой конфиденциальности</a>
+                  </div>
+                  <button type="submit" class="form__button orange-button">Отправить</button>
+               </fieldset>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div id="popup_form-success" class="popup popup_form-success">
+      <div class="popup__body">
+         <div class="popup__content popup_form-success-content">
+            <a href="#" class="popup__close close-popup"></a>
+            <h3 class="popup_form-success-title">Ваша заявка успешно отправлена</h3>
+            <div class="popup_form-success-text">Наши специалисты свяжутся с вами в ближайшие 30 минут.</div>
+            <span class="popup_form-success-image" aria-hidden="true"></span>
+         </div>
+      </div>
+   </div>
+
+   <div id="popup-services" class="popup popup-services">
+      <div class="popup__body popup-services-body">
+         <div class="popup__content popup-services__content">
+            <a href="#" class="popup__close close-popup"></a>
+            <div class="popup-services__image">
+               <img src="" alt="" class="popup-services__img">
+            </div>
+            <div class="popup-services__body">
+               <h3 class="popup-services__title"></h3>
+               <ul class="popup-services__list">
+
+               </ul>
+               <a href="#popup_form" class="orange-button popup-link popup-services__button">Оставить заявку</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js?-v=20240313181533"></script>
+<script src="js/app.min.js?-v=20240313181533"></script>
 </body>
 
 </html>
