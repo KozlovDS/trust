@@ -6,9 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..600&display=swap&-v=20240313181533" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.min.css?-v=20240313181533">
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?-v=20240313181533" />
+   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..600&display=swap&-v=20240314155955" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?-v=20240314155955">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?-v=20240314155955" />
    <title>Главная</title>
 </head>
 
@@ -36,7 +36,7 @@
     </ul>
   </nav>
   <div class="burger"><span></span></div>
-  <a href="#popup_form-success" class="header__button popup-link">Связаться с нами</a>
+  <a href="#popup_form" class="header__button popup-link">Связаться с нами</a>
   <ul class="header__contacts contacts">
     <li class="contacts__address contacts__item">Московская область, город Красногорск, деревня Глухово, ул. Романовская, д13, кВ 474</li>
     <li class="contacts__phone contacts__item">+7 (925) 519-88-23</li>
@@ -96,141 +96,143 @@
             </div>
          </section>
          <section class="services" id="services">
-            <h2 class="services__title title__h2">Наши <span class="title__h2-bold">услуги</span></h2>
-            <div class="services__tabs tabs" data-tabs="services">
-               <ul class="services__tabs-list tabs__nav">
-                  <li class="services__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Страхование</button></li>
-                  <li class="services__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Финансирование</button></li>
-               </ul>
-               <div class="services__tabs-content tabs__content">
-                  <div class="services__tabs-panel tabs__panel">
-                     <div class="services__slider swiper">
-                        <div class="swiper-wrapper">
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование ТРЦ</h3>
-                                    <a href="#popup-services" class="popup-link service__button">Подробнее</a>
-                                 </div>
-                                 <div class="service__list">
-                                    <li class="popup-services__item">Страхование имущества торгового центра</li>
-                                    <li class="popup-services__item">Страхование ответственности арендаторов</li>
-                                    <li class="popup-services__item">Страхование гражданской ответственности торгового центра</li>
-                                    <li class="popup-services__item">Страхование имущества арендаторов</li>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование СМР</h3>
-                                    <a href="#popup-services" class="popup-link service__button">Подробнее</a>
-                                 </div>
-                                 <div class="service__list">
-                                    <li class="popup-services__item">Страхование строительно-монтажных работ</li>
-                                    <li class="popup-services__item">Страхование гражданской ответственности при проведении строительных работ</li>
-                                    <li class="popup-services__item">Страхование ответственности застройщика</li>
-                                    <li class="popup-services__item">Страхование субподрядных организаций</li>
-                                    <li class="popup-services__item">Страхование существующего имущества</li>
-                                    <li class="popup-services__item">Страхование послепускового периода</li>
+            <div class="services__container">
+               <h2 class="services__title title__h2">Наши <span class="title__h2-bold">услуги</span></h2>
+               <div class="services__tabs tabs" data-tabs="services">
+                  <ul class="services__tabs-list tabs__nav">
+                     <li class="services__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Страхование</button></li>
+                     <li class="services__tabs-list-item tabs__nav-item"><button type="button" class="tabs__nav-btn">Финансирование</button></li>
+                  </ul>
+                  <div class="services__tabs-content tabs__content">
+                     <div class="services__tabs-panel tabs__panel">
+                        <div class="services__slider swiper">
+                           <div class="swiper-wrapper">
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование ТРЦ</h3>
+                                       <a href="#popup-services" class="popup-link service__button">Подробнее</a>
+                                    </div>
+                                    <div class="service__list">
+                                       <li class="popup-services__item">Страхование имущества торгового центра</li>
+                                       <li class="popup-services__item">Страхование ответственности арендаторов</li>
+                                       <li class="popup-services__item">Страхование гражданской ответственности торгового центра</li>
+                                       <li class="popup-services__item">Страхование имущества арендаторов</li>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/3.webp" type="image/webp"><img src="./img/services/3.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование имущества</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование СМР</h3>
+                                       <a href="#popup-services" class="popup-link service__button">Подробнее</a>
+                                    </div>
+                                    <div class="service__list">
+                                       <li class="popup-services__item">Страхование строительно-монтажных работ</li>
+                                       <li class="popup-services__item">Страхование гражданской ответственности при проведении строительных работ</li>
+                                       <li class="popup-services__item">Страхование ответственности застройщика</li>
+                                       <li class="popup-services__item">Страхование субподрядных организаций</li>
+                                       <li class="popup-services__item">Страхование существующего имущества</li>
+                                       <li class="popup-services__item">Страхование послепускового периода</li>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/4.webp" type="image/webp"><img src="./img/services/4.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование персонала</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/3.webp" type="image/webp"><img src="./img/services/3.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование имущества</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование ТРЦ</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/4.webp" type="image/webp"><img src="./img/services/4.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование персонала</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование СМР</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование ТРЦ</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование СМР</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="services__tabs-panel tabs__panel">
-                     <div class="services__slider swiper">
-                        <div class="swiper-wrapper">
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование ТРЦ</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                     <div class="services__tabs-panel tabs__panel">
+                        <div class="services__slider swiper">
+                           <div class="swiper-wrapper">
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование ТРЦ</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование СМР</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование СМР</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/3.webp" type="image/webp"><img src="./img/services/3.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование имущества</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/3.webp" type="image/webp"><img src="./img/services/3.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование имущества</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/4.webp" type="image/webp"><img src="./img/services/4.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование персонала</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/4.webp" type="image/webp"><img src="./img/services/4.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование персонала</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование ТРЦ</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/1.webp" type="image/webp"><img src="./img/services/1.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование ТРЦ</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="services__slide swiper-slide">
-                              <div class="service">
-                                 <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
-                                 <div class="service__content">
-                                    <h3 class="service__title">Страхование СМР</h3>
-                                    <button type="button" class="service__button">Подробнее</button>
+                              <div class="services__slide swiper-slide">
+                                 <div class="service">
+                                    <div class="service__image"><picture><source srcset="./img/services/2.webp" type="image/webp"><img src="./img/services/2.png" alt="img" class="service__img"></picture></div>
+                                    <div class="service__content">
+                                       <h3 class="service__title">Страхование СМР</h3>
+                                       <button type="button" class="service__button">Подробнее</button>
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -239,13 +241,14 @@
                   </div>
                </div>
             </div>
+
          </section>
          <section class="about" id="about">
             <div class="about__container">
                <div class="about__content">
                   <h2 class="about__title title__h2" data-aos="fade-down" data-aos-duration="600">О <span class="title__h2-bold">нас</span></h2>
                   <div data-aos="fade-right" data-aos-duration="1000">
-                     <div class="about__text">Финансовой агентство TRUST – это команда опытных специалистов страховой и
+                     <div class="about__text">Финансовое агентство TRUST – это команда опытных специалистов страховой и
                         банковской сферы, которые находят лучшее решение для клиента, даже в сложных
                         ситуациях.
                      </div>
@@ -317,7 +320,7 @@
                   <li class="submit__item submit-point" data-aos="fade-left">
                      <h3 class="submit-point__title">Заполните заявку</h3>
                      <ul class="submit-point__list">
-                        <li class="submit-point__item">Подача заявки через сайт, запрос по e-mail, через messedger или обращение по телефону</li>
+                        <li class="submit-point__item">Подача заявки через сайт, запрос по e-mail, через messenger или обращение по телефону</li>
                         <li class="submit-point__item">Консультация по выбору продукта с экспертом TRUST</li>
                      </ul>
                   </li>
@@ -331,7 +334,7 @@
                   <li class="submit__item submit-point" data-aos="fade-left" data-aos-delay="600">
                      <h3 class="submit-point__title">Получите кредит</h3>
                      <ul class="submit-point__list">
-                        <li class="submit-point__item">Личная встреча и подписание договора на оказание услуг TRAST</li>
+                        <li class="submit-point__item">Личная встреча и подписание договора на оказание услуг TRUST</li>
                         <li class="submit-point__item">Кредитный комитет в банке и одобрение на ранее согласованных условиях</li>
                      </ul>
                   </li>
@@ -704,8 +707,8 @@
       </div>
    </div>
 
-   <script src="https://unpkg.com/aos@next/dist/aos.js?-v=20240313181533"></script>
-<script src="js/app.min.js?-v=20240313181533"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js?-v=20240314155955"></script>
+<script src="js/app.min.js?-v=20240314155955"></script>
 </body>
 
 </html>
